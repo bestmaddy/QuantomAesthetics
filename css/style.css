@@ -1,0 +1,155 @@
+:root {
+    --background-blue: #000d28;
+    --font-color: #ffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    background-color: var(--background-blue);
+    background-image: url(../assets/page_62.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    isolation: isolate;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: var(--background-blue);
+    opacity: .8;
+}
+
+.navbar-brand img {
+    max-height: 70px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    color: var(--font-color);
+}
+
+.hero-text {
+    position: relative;
+    color: var(--font-color);
+    min-height: 39rem;
+}
+
+.nd-section-cross {
+    width: 100%;
+    min-height: 200px;
+    background: var(--font-color);
+    position: absolute;
+    bottom: -128px;
+    left: 0;
+    transform: skewY(174deg);
+    z-index: 0;
+}
+
+.hero-text .sub-title {
+    font-size: 65px;
+}
+
+.book-a-btn {
+    display: block;
+    width: 350px;
+    background: lightgray;
+    padding: 10px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.book-a-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.hex {
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    position: absolute;
+}
+
+.sml-hex {
+    top: 2.5rem;
+    right: 5rem;
+}
+
+.sml-hex img {
+    height: 2rem;
+}
+
+.med-hex {
+    right: 0rem;
+    top: 6rem;
+}
+
+.med-hex img {
+    height: 4.5rem;
+}
+
+.logo-hex {
+    right: 0;
+    bottom: 0;
+}
+
+.nd-section {
+    background: #f5f2f2;
+    height: 550px;
+    z-index: 1;
+    position: relative;
+}
+
+.p-question {
+    font-size: 45px;
+}
+
+.s2-sml-hex {
+    top: -4rem;
+}
+
+.s2-sml-hex img {
+    height: 35px;
+}
+
+.s2-med-hex {
+    top: 0rem;
+    left: 3rem;
+}
+
+.s2-med-hex img {
+    height: 60px;
+}
+
+.s2-logo-hex {
+    left: -2rem;
+    top: 5rem;
+}
+
+.s2-logo-hex img {
+    height: 150px;
+}
+
+.rd-section {
+    background: var(--background-blue);
+    color: var(--font-color);
+    z-index: 1;
+    position: relative;
+}
+
+.th-section {
+    background: #f5f2f2;
+    padding-top: 160px;
+}
